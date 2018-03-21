@@ -248,6 +248,8 @@ def run_test_problem1b():
     answer = problem1b(3)
     print('Test 4 expected:', expected)
     print('       actual:  ', answer)
+
+
 ###############################################################################
 # IMPORTANT note: in the following problem,
 #    **  For full credit you must appropriately use (call)

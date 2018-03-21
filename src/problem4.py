@@ -124,6 +124,8 @@ def problem4(m):
     for k in range(m - 2):
         if m % (k + 2) == 0:
             num_factors = num_factors + 1
+        else:
+            pass
     return num_factors
     """
     Examples:
@@ -142,7 +144,7 @@ def problem4(m):
                                  (i.e., it is prime)
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 

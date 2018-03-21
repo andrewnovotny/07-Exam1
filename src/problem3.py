@@ -64,6 +64,8 @@ def run_test_problem3():
 #   -- Etc. writing chunks of code and testing them ** ONE AT A TIME. **
 #
 ###############################################################################
+
+
 def problem3(rect, n, window):
     """
     See    problem3_pictures.pdf     for pictures that may help you
@@ -94,7 +96,7 @@ def problem3(rect, n, window):
         circle = rg.Circle(center, height / 2)
         circle.attach_to(window)
         window.render(0.05)
-        center = rg.Point(center.x + math.sqrt(2) * (height / 2), center.y + math.sqrt(2) * (height / 2))
+        center = rg.Point(center.x + math.sqrt(2) * height / 2, center.y + math.sqrt(2) * height / 2)
 
     """
       Must render but   ** NOT close **   the window.
