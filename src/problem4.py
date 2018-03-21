@@ -2,8 +2,8 @@
 Exam 1, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  March 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Andrew Novotny.  March 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -119,6 +119,13 @@ def problem4(m):
       -- the TRIVIAL factors of m are 1 and m, and the NON-TRIVIAL factors
            of m are all the factors EXCEPT the trivial ones.
     Side effects:   None.
+    """
+    num_factors = 0
+    for k in range(m - 2):
+        if m % (k + 2) == 0:
+            num_factors = num_factors + 1
+    return num_factors
+    """
     Examples:
       -- problem4(10)  returns 2  because 10 has 2 non-trivial factors,
                                       namely: 2 and 5.
