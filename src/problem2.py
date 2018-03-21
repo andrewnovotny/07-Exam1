@@ -2,8 +2,8 @@
 Exam 1, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  March 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Andrew Novotny.  March 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -92,8 +92,15 @@ def problem2(line1, line2, thickness, win):
       -- An rg.RoseWindow.
     What goes out:  Nothing (i.e
     Side effects:., None).
-
-
+    """
+    line1.attach_to(win)
+    line2.attach_to(win)
+    rectangle = rg.Rectangle(line1.get_midpoint(), line2.get_midpoint())
+    rectangle.attach_to(win)
+    rectangle.outline_color = line1.color
+    rectangle.outline_thickness = thickness
+    win.render(0.1)
+    """
       1. Draws the given rg.Line objects (line1 and line2)
            on the given rg.RoseWindow.
 
@@ -115,7 +122,7 @@ def problem2(line1, line2, thickness, win):
       :type win:        rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function, TESTING each step as you go.
+    # DONE: 2. Implement and test this function, TESTING each step as you go.
     #          Tests have been written for you (above).
     #   See the IMPORTANT NOTE just above the DEF line above.
     # -------------------------------------------------------------------------
